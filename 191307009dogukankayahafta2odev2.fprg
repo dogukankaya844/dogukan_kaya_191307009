@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 09:15:05 "/>
+        <attribute name="created" value="MjE7IFBDMjE7IDIwMTktMTAtMDk7IDA5OjA1OjI0IDsgMTU3MA=="/>
+        <attribute name="edited" value="MjE7IFBDMjE7IDIwMTktMTAtMDk7IDA5OjE1OjA1IDsgMTU3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, tahmin, rastgele" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="rastgele" expression="0"/>
+            <assign variable="rastgele" expression="random(100)"/>
+            <output expression="rastgele"/>
+            <output expression="&quot;L&#252;tfen tahmin giriniz.&quot;"/>
+            <do expression="rastgele!=tahmin">
+                <input variable="tahmin"/>
+                <if expression="rastgele!=tahmin">
+                    <then>
+                        <if expression="rastgele&gt;tahmin">
+                            <then>
+                                <output expression="&quot;Daha b&#252;y&#252;k bir de&#287;er giriniz.&quot;"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha k&#252;&#231;&#252;k bir de&#287;er giriniz&quot;"/>
+                            </else>
+                        </if>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="rastgele &amp;&quot; say&#305;s&#305;n&#305; &quot; &amp; sayac &amp; &quot; defada buldunuz Tebrikler!&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

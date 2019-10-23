@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 09:54:15 "/>
+        <attribute name="created" value="MjE7IFBDMjE7IDIwMTktMTAtMDI7IDA5OjE1OjQ5IDsgMTU3MQ=="/>
+        <attribute name="edited" value="MjE7IFBDMjE7IDIwMTktMTAtMDI7IDA5OjU0OjE1IDsgMTU2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;a y&#305; giriniz&quot;"/>
+            <input variable="a"/>
+            <output expression="&quot;b yi giriniz&quot;"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="&quot;a b'den b&#252;y&#252;kt&#252;r&quot;"/>
+                </then>
+                <else>
+                    <if expression="b&gt;a">
+                        <then>
+                            <output expression="&quot;b a'dan b&#252;y&#252;kt&#252;r&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;a b'ye e&#351;ittir&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

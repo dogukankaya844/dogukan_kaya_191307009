@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 09:49:51 "/>
+        <attribute name="created" value="MjE7IFBDMjE7IDIwMTktMTAtMTY7IDA5OjA1OjI0IDsgMTU2OA=="/>
+        <attribute name="edited" value="MjE7IFBDMjE7IDIwMTktMTAtMTY7IDA5OjQ5OjUxIDsgMTU3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="birler, onlar, y&#252;zler, binler, say&#305;, uzunluk" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen 4 basamakl&#305; bir say&#305; giriniz.&quot;"/>
+            <input variable="say&#305;"/>
+            <do expression="uzunluk!=4">
+                <assign variable="uzunluk" expression="Len(ToString(say&#305;))"/>
+                <if expression="uzunluk!=4">
+                    <then>
+                        <output expression="&quot;L&#252;tfen 4 basamakl&#305; bir say&#305; giriniz.&quot;"/>
+                        <input variable="say&#305;"/>
+                    </then>
+                    <else>
+                        <assign variable="birler" expression="say&#305;%10"/>
+                        <assign variable="onlar" expression="(say&#305;/10)%10"/>
+                        <assign variable="y&#252;zler" expression="(say&#305;/100)%10"/>
+                        <assign variable="binler" expression="say&#305;/1000"/>
+                        <assign variable="birler" expression="birler^2"/>
+                        <assign variable="onlar" expression="onlar^2"/>
+                        <assign variable="y&#252;zler" expression="y&#252;zler^2"/>
+                        <assign variable="binler" expression="binler^2"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;toplam:&quot;&amp;birler+onlar+y&#252;zler+binler"/>
+        </body>
+    </function>
+</flowgorithm>
